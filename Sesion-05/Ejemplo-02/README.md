@@ -82,3 +82,7 @@ ResultSet res = stmt.executeQuery(query);
 String query = "SELECT * FROM Agendar_Cita where email = null";
 ResultSet res = stmt.executeQuery(query);
 ```
+
+##### Haciendo queries en linea
+
+Si no tienes disponible MySQL en tu equipo local, puedes hacer algunas queries en: [W3School](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all=
