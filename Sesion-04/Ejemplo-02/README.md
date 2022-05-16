@@ -232,6 +232,10 @@ public class AgendarCitaPage {
 	// Método que recibirá el driver en esta clase
 	public AgendarCitaPage(WebDriver driver) {
 		this.driver = driver;
+		
+		if (isModalVisible(driver)) {
+            		throw new IllegalStateException("Modal is not visible");
+        	}
 	}
 
 	
@@ -248,6 +252,9 @@ public class AgendarCitaPage {
 	private By sector = By.name("sector");
 	private By companySize = By.name("companySize");
 	
+	private boolean isModalVisible(WebDriver driver) {
+        	return !driver.findElement(cancelBttnSelector).isDisplayed();
+    	}
 
 
 	// Método que realizara un click en bnt_cancelar
