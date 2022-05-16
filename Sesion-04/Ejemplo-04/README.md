@@ -39,6 +39,8 @@ public Object[][] metodoDataProvider() {
 
 ```Java
 return new Object [][] {values} 
+
+
 ```
 
 Sigamos con el ejemplo de la funcionalidad de agendar asesorias, de la pagin web de bedu, como en los 2 temas anteriores, utilizaremos los mismos datos de origen para nuestro script de prueba solo que en esta oportunidad lo haremos con la anotación `@DataProvider` de TestNG.
@@ -86,6 +88,18 @@ public class DataDrivenTestingUsingDataProvider {
 				{ "Veronica", "Salas", "55555555", "Veronica.Salas@gmail.com", "bedu", "QA", "Consultoría",
 						"1 a 50 empleados", "Web Automation Testing" } };
 	}
+	
+	//Implementación de data provder utilizando un archivo csv
+	//    @DataProvider(name = "dataProvider")
+//    public Object[][] metodoDataProvider() throws IOException, CsvValidationException {
+//        CSVReader csvReader = new CSVReader(new FileReader(CSV_PATH));
+//        List<Object[]> data = new ArrayList<Object[]>();
+//        while ((csvCell = csvReader.readNext()) != null) {
+//            data.add(new String[]{csvCell[0], csvCell[1], csvCell[2], csvCell[3], csvCell[4], csvCell[5], csvCell[6], csvCell[7], csvCell[8]});
+//        }
+//
+//        return data.toArray(new Object[data.size()][]);
+//    }
 
 	@Test(dataProvider = "dataprovider")
 	public void agendarAsesoria(String name, String lastname, String phone, String email, String company,
