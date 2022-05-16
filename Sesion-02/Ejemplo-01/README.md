@@ -118,22 +118,22 @@ public class base {
 TestNG también nos permite priorizar la ejecución de los casos de prueba si le asignamos un número de prioridad. Cuanto menor sea el número, mayor será la prioridad. La prioridad se puede asignar como parámetros al definir los casos de prueba. Pero, si no se asigna ninguna prioridad, los métodos de prueba anotados se ejecutarán según el orden alfabético de las pruebas. Por ejemplo:
 
 ```Java
-    @Test(Priority=2)
+    @Test(priority=2)
     public static void PrimeraPrueba()
     {
-        system.out.println("Este es el SEGUNDO caso de prueba porque la prioridad = 2");
+        system.out.println("Este es el TERCER caso de prueba porque la prioridad = 2");
     }
     
-    @Test(Priority=1)
+    @Test(priority=1)
     public static void SegundaPrueba()
     {
-        system.out.println("Este es el PRIMER caso de prueba porque la prioridad = 1");
+        system.out.println("Este es el SEGUNDO caso de prueba porque la prioridad = 1");
     }
     
     @Test
     public static void Prueba()
     {
-        system.out.println("Este es el último caso de prueba porque no tiene prioridad");
+        system.out.println("Este es el PRIMER caso de prueba porque al no especificar el parametro priority se toma el default que es 0 ");
     }
 ```
 
