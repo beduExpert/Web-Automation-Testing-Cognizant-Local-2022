@@ -86,3 +86,12 @@ ResultSet res = stmt.executeQuery(query);
 ##### Haciendo queries en linea
 
 Si no tienes disponible MySQL en tu equipo local, puedes hacer algunas queries en: [W3School](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all=
+
+![imagen](https://user-images.githubusercontent.com/5317347/168661198-47f196cc-0b9f-49ff-8215-ab813e8167b3.png)
+
+
+![imagen](https://user-images.githubusercontent.com/5317347/168661301-2e4a4fa7-c44c-40d9-9045-e86770721359.png)
+
+
+![imagen](https://user-images.githubusercontent.com/5317347/168661754-41dbb53d-418e-404e-970f-601e510d31cc.png)
+
