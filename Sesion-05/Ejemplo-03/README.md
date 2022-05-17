@@ -136,8 +136,6 @@ public class DataDrivenTestingUsingDataBase {
 			System.out.println(query);
 			while (res.next()) {
 
-				total++;
-
 				for (int i = 1; i <= columnsNumber; i++) {
 					System.out.print(" | " + res.getString(i));
 					if (i == columnsNumber) {
