@@ -39,18 +39,7 @@ MySQL es el DBMS que se encuentra detrás de algunos de los sitios web y aplicac
 
 #### Sentencias MySQL para la Creación de base de datos
 
-1.  Creación del Schema  por medio de query con la siguiente Syntax
-
-```SQL
-CREATE SCHEMA schema_name;
-```
-> Para este tema crearemos la siguiente:
-
-```SQL
-CREATE SCHEMA WebAutomationTesting;
-```
-
-2. Creación de la base de datos por medio de query con la siguiente Syntax
+1. Creación de la base de datos por medio de query con la siguiente Syntax
 
 ```SQL
 CREATE DATABASE databasename;
